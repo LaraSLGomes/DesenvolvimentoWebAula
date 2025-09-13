@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <h2>Suas Preferências</h2>
+
+    <form action="/salvar-preferencias" method="post">
+        
+        <div>
+            <label for="cor-select">Escolha sua cor favorita:</label><br>
+            <select name="cor_favorita" id="cor-select">
+                <option value="">--Selecione uma opção--</option>
+                <option value="vermelho">Vermelho</option>
+                <option value="verde">Verde</option>
+                <option value="azul">Azul</option>
+            </select>
+        </div>
+        
+        <br>
+
+        <div>
+            <p>Gosta de colorir?</p>
+            <div>
+                <input type="radio" id="notificacao-sim" name="receber_notificacoes" value="sim">
+                <label for="notificacao-sim">Sim</label>
+            </div>
+            <div>
+                <input type="radio" id="notificacao-nao" name="receber_notificacoes" value="nao">
+                <label for="notificacao-nao">Não</label>
+            </div>
+        </div>
+
+        <br>
+        
+        <button type="submit">Salvar</button>
+
+    </form>
+
+</body>
+</html>

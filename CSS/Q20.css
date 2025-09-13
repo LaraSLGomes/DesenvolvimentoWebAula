@@ -1,0 +1,7 @@
+body {
+    min-height: 100vh;
+    margin: 0; 
+    background-image: linear-gradient(to right, #4343e7, #8a2be2);
+    font-family:'Times New Roman', Times, serif;
+    color: white;
+}

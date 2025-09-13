@@ -1,0 +1,38 @@
+body {
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.tabela-estilizada {
+    width: 80%;
+    max-width: 800px;
+    margin-top: 20px; 
+    border-collapse: collapse;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+.tabela-estilizada th,
+.tabela-estilizada td {
+    padding: 12px 15px; 
+    border: 1px solid #ddd; 
+    text-align: left; 
+}
+
+.tabela-estilizada thead th {
+    background-color: #007bff; 
+    color: white; 
+    font-weight: bold;
+}
+
+.tabela-estilizada tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.tabela-estilizada tbody tr:hover {
+    background-color: #e2e2e2;
+    cursor: pointer;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Validação de Formulário</title>
+</head>
+<body>
+
+  <form id="meuFormulario">
+    <label for="campoNome">Nome:</label>
+    <input type="text" id="campoNome" placeholder="Digite seu nome">
+    <button type="submit">Enviar</button>
+  </form>
+
+  <script>
+    // código inclui dentro de um arquivo html pois questão pediu.
+
+    // seleciona os elementos do formulário
+    const form = document.getElementById('meuFormulario');
+    const campoNome = document.getElementById('campoNome');
+
+    form.addEventListener('submit', function(event) {
+      // impede o comportamento padrão do formulário (que é recarregar a página)
+      event.preventDefault();
+
+      // verifica se o campo nome está vazio
+      if (nome === '') {
+        alert('Por favor, preencha o campo Nome!');
+      } else {
+        alert(`Olá, ${nome}! Formulário enviado com sucesso.`);
+        form.reset(); //limpa o formulário após o envio
+      }
+    });
+  </script>
+
+</body>
+</html>
